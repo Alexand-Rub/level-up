@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="кг">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LevelUp</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="container hero__top">
+            <div class="logo"></div>
+            <a href="#order" class="order-link">Заказать</a>
+        </div>
+        <div class="container hero__block">
+            <img class="product" src="../img/prod.png" alt="Лекарство 'LevelUp'">
+            <ul class="descriptions">
+                <li class="descriptions__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione exercitationem et vel illo aliquam hic iusto ullam perferendis accusamus</li>
+                <li class="descriptions__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione exercitationem et vel illo aliquam hic iusto ullam perferendis accusamus</li>
+                <li class="descriptions__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione exercitationem et vel illo aliquam hic iusto ullam perferendis accusamus</li>
+            </ul>
+        </div>
+        <video class="sky" src="video/sky.mp4" autoplay loop>
+            <source src="video/sky.mp4" type="video/mp4"></video>
+        </video>
+    </header>
+    <section class="ingredients">
+        <div class="container">
+            <div class="ingredients__item ingredients__item-1">
+                <div class="ingredients__img"></div>
+                <p class="ingredients__header">Ингридиент 1</p>
+            </div>
+            <div class="ingredients__item ingredients__item-2">
+                <div class="ingredients__img"></div>
+                <p class="ingredients__header">Ингридиент 2</p>
+            </div>
+            <div class="ingredients__item ingredients__item-3">
+                <div class="ingredients__img"></div>
+                <p class="ingredients__header">Ингридиент 3</p>
+            </div>
+            <div class="ingredients__product">
+                <a href="#order" class="order-link">Заказать</a>
+            </div>
+            <div class="ingredients__item ingredients__item-4">
+                <div class="ingredients__img"></div>
+                <p class="ingredients__header">Ингридиент 4</p>
+            </div>
+            <div class="ingredients__item ingredients__item-5">
+                <div class="ingredients__img"></div>
+                <p class="ingredients__header">Ингридиент 5</p>
+            </div>
+            <div class="ingredients__item ingredients__item-6">
+                <div class="ingredients__img"></div>
+                <p class="ingredients__header">Ингредиент 6</p>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="slider">
+                <div class="slider__line">
+                    <div class="slider__slide">
+                        <div class="reviews__avatar"></div>
+                        <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam natus quibusdam explicabo deleniti? Ipsam nam repellendus rerum atque harum corrupti, debitis nulla consectetur beatae pariatur recusandae, dolores facere possimus.</p>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="reviews__avatar"></div>
+                        <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam natus quibusdam explicabo deleniti? Ipsam nam repellendus rerum atque harum corrupti, debitis nulla consectetur beatae pariatur recusandae, dolores facere possimus.</p>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="reviews__avatar"></div>
+                        <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam natus quibusdam explicabo deleniti? Ipsam nam repellendus rerum atque harum corrupti, debitis nulla consectetur beatae pariatur recusandae, dolores facere possimus.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider__next">Ещё</button>
+        </div>
+        <script src="js/slider.js"></script>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__block">
+                <div class="doctor"></div>
+                <div class="promo__description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus sit quis modi voluptates reiciendis, odio corporis nobis consectetur, recusandae vitae fugit quod dolorum quasi nulla ad, perspiciatis neque eaque.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus sit quis modi voluptates reiciendis, odio corporis nobis consectetur, recusandae vitae fugit quod dolorum quasi nulla ad, perspiciatis neque eaque.</p>
+                </div>
+            </div>
+            <ul class="promo__list">
+                <li class="promo__item">Очень вкусный</li>
+                <li class="promo__item">Быстро работает</li>
+                <li class="promo__item">Без привыкания</li>
+            </ul>
+        </div>
+    </section>
+    <section id="order" class="order">
+        <div class="container">
+            <div class="order__top">
+                <div id="countdoen" class="timer"></div>
+                <div class="logo"></div>
+            </div>
+            <div class="order__bottom">
+                <form class="form" action="POST">
+                    
+                    <div class="price">
+                        Цена:
+                        <span class="price__old">3000</span>
+                        <span class="price__new">1500</span>
+                        р.
+                    </div>
+                    <p class="form__title">Имя:</p>
+                    <input class="form__inp" type="text" placeholder="Иван">
+                    <p class="form__title">Телефон:</p>
+                    <input class="form__inp" type="tel" placeholder="+7 999 888 77 66">
+                    <button type="submit" class="form__order">Заказать</button>
+                </form>
+                <img class="order__product" src="../img/prod.png" alt="Лекарство 'LevelUp'">
+            </div>
+            <script src="js/timer.js"></script>
+        </div>
+    </section>
+</body>
+</html>
