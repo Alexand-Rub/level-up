@@ -363,6 +363,17 @@ body {
 .price__new {
     font-size: 50px;
     color: red;
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    /* background: transparent; */
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate {
+ 50% {text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #910000, 0 0 8px red; }
+}
+@keyframes pulsate {
+ 50% {text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #910000, 0 0 8px red; }
 }
 
 .form__title {
